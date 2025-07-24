@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bakery's - О пекарне</title>
+	<script>
+  		if ('serviceWorker' in navigator) {
+  		  window.addEventListener('load', () => {
+   		   navigator.serviceWorker.register('/service-worker.js')
+   		    .then(registration => console.log('SW registered!'))
+    	    .catch(err => console.log('SW registration failed: ', err));
+    		});
+ 		 }
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="manifest" href="/manifest.json">
+</head>
+<body>
+		<div class="menu">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo">
+			</div>
+			<div class="button">
+				<ul>
+					<li><a href="index.html" class="btn0">Главная</a></li>
+					<li><a href="about.html" class="btn1">О Пекарне</a></li>
+					<li><a href="menu.html" class="btn2">Меню</a></li>
+					<li><a href="obr.html" class="btn4">Обратная связь</a></li>
+					<li><a href="contacts.html" class="btn3">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	<div class="tech2">
+		<div class="inf">
+			<p>О пекарне</p>
+			<p>Вот уже более 30 лет наша  радует покупателей</p>
+			<p>Мы выпекаем вкуснейшие хлебобулочные изделия и изготавливаем качественный кофе</p>
+			<p>Мы заботимся о качестве всех продуктов</p>
+		</div>
+		<div class="foto2">
+			<div class="img/img2"></div>
+		</div>
+	</div>
+</body>
+</html>
