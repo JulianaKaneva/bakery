@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+  		if ('serviceWorker' in navigator) {
+		    window.addEventListener('load', () => {
+		      navigator.serviceWorker.register('/service-worker.js')
+ 		       .then(registration => console.log('SW registered!'))
+  		      .catch(err => console.log('SW registration failed: ', err));
+  		  });
+ 		 }
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bakery's - Контакты</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="manifest" href="/manifest.json">
+</head>
+<body>
+		<div class="menu">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo">
+			</div>
+			<div class="button">
+				<ul>
+					<li><a href="index.html" class="btn0">Главная</a></li>
+					<li><a href="about.html" class="btn1">О Пекарне</a></li>
+					<li><a href="menu.html" class="btn2">Меню</a></li>
+					<li><a href="obr.html" class="btn4">Обратная связь</a></li>
+					<li><a href="contacts.html" class="btn3">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	<div class="tech4">
+		<div class="inf4">
+			<p>+7 888 888 88 88</p>
+			<p>bakerys@yandex.ru</p>
+			<p>г. Москва, ул. Магистральная 78</p>
+		</div>
+		<div class="logo">
+			<img src="img/logo.png" alt="logo">
+		</div>
+	</div>
+</body>
+</html>
